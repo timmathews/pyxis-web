@@ -1,0 +1,109 @@
+---
+layout: default
+title: Propulsion
+permalink: /propulsion.html
+script:
+  - js/gauge.js
+  - js/fuel-gauge.js
+  - js/propulsion.js
+style: css/propulsion.css
+category: systems
+---
+<div class="row">
+  <div class="col-xs-6">
+    <div class="row">
+      <canvas id="gauge-1" class="large-gauge"></canvas>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="row">
+          <canvas id="gauge-2"></canvas>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="row">
+          <canvas id="gauge-3"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-3">
+    <div class="row">
+      <canvas id="gauge-4"></canvas>
+    </div>
+    <div class="row">
+      <canvas id="gauge-5"></canvas>
+    </div>
+    <div class="row">
+      <canvas id="gauge-6"></canvas>
+    </div>
+  </div>
+  <div class="col-xs-3">
+    <div class="row">
+      <canvas id="gauge-7" class="small-gauge" width=145 height=45></canvas>
+    </div>
+    <div class="row">
+      <div class="col-xs-4">
+        <div class="row">
+          <canvas id="gauge-8" class="small-v-gauge" width=45 height=145></canvas>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="row">
+          <div id="indicator-1" class="indicator warn"><span>High Fuel Flow</span></div>
+        </div>
+        <div class="row">
+          <div id="indicator-2" class="indicator warn"><span>High Fuel Vacuum</span></div>
+        </div>
+        <div class="row">
+          <div id="indicator-3" class="indicator warn"><span>Water in Fuel</span></div>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="row">
+          <div id="indicator-4" class="indicator warn"><span>High Engine Temp</span></div>
+        </div>
+        <div class="row">
+          <div id="indicator-5" class="indicator warn"><span>Low Oil Press</span></div>
+        </div>
+        <div class="row">
+          <div id="indicator-6" class="indicator warn"><span>High Oil Press</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4">
+        <div class"row">
+          <div id="indicator-7" class="indicator warn"><span>No Raw Water</span></div>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class"row">
+          <div id="indicator-8" class="indicator warn"><span>DC Bus Undervolt</span></div>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class"row">
+          <div id="indicator-9" class="indicator warn"><span>DC Bus Overvolt</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4">
+        <div class"row">
+          <div id="indicator-10" class="indicator warn"><span>Bilge Pump 1 Run</span></div>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class"row">
+          <div id="indicator-11" class="indicator warn"><span>Bilge Pump 2 Run</span></div>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class"row">
+          <div id="indicator-12" class="indicator warn"><span>Master Alarm</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

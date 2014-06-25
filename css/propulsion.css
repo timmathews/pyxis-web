@@ -1,0 +1,53 @@
+canvas {
+  width: 145px;
+  height: 145px;
+  display: block;
+}
+
+canvas.small-gauge {
+  height: 45px;
+}
+
+canvas.large-gauge {
+  height: 295px;
+  width: 295px;
+}
+
+canvas.small-v-gauge {
+  width: 45px;
+  background: #dedede;
+}
+
+.indicator {
+    border: 1px solid;
+    height: 45px;
+    width: 45px;
+    border-radius: 7px;
+    box-shadow: rgba(0,0,0,0.4) -2px -2px 1px 1px;
+    font-family: sans-serif;
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.warn {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+}
+
+.ok {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #3c763d;
+}
+
+.indicator span {
+  display: table-cell;
+  width: 40px;
+  height: 45px;
+  vertical-align: middle;
+}
+
