@@ -1,0 +1,7 @@
+name: Pyxis Web Dashboard
+markdown: redcarpet
+pygments: true
+
+api_url: https://pyxis.openseasproject.org/api/v1
+data_url: ws://pyxis.openseasproject.org/ws/v1/data
+destination: /var/www/openseas/pyxis-web
