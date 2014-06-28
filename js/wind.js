@@ -1,3 +1,5 @@
+---
+---
 $(document).ready(function() {
   var windCanvas = new WindGauge({
     renderTo: 'wind',
@@ -147,7 +149,7 @@ $(document).ready(function() {
   }
 
   function createWebSocket () {
-    var conn = new WebSocket("ws://pyxis.openseasproject.org/ws/v1/data");
+    var conn = new WebSocket("{{site.data_url}}");
 
     conn.onmessage = function(evt) {
       var d;
