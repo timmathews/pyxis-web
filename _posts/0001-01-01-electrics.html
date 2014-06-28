@@ -2,6 +2,45 @@
 layout: default
 title: Electrics
 permalink: /electrics.html
+script:
+  - js/segment-display.js
+  - js/electrics.js
+style: css/electrics.css
 ---
 <div class="row">
+  <div class='col-xs-6'>
+    <div class="meter" id="house-v">
+      <div class="inner">
+        <canvas id="h-display" width="200" height="75"></canvas>
+        <canvas id="h-title" width="200" height="25"></canvas>
+      </div>
+    </div>
+  </div>
+  <div class='col-xs-6'>
+    <div class="meter" id="engine-v">
+      <div class="inner">
+        <canvas id="e-display" width="200" height="75"></canvas>
+        <canvas id="e-title" width="200" height="25"></canvas>
+      </div>
+    </div>
+  </div>
 </div>
+<div class="row">
+  <div class="col-xs-6">
+    <div class="meter" id="house-a">
+      <div class="inner">
+        <canvas id="ha-display" width="200" height="75"></canvas>
+        <canvas id="ha-title" width="200" height="25"></canvas>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-6">
+    <div class="meter" id="engine-a">
+      <div class="inner">
+        <canvas id="ea-display" width="200" height="75"></canvas>
+        <canvas id="ea-title" width="200" height="25"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
+
