@@ -1,6 +1,6 @@
 $(document).ready(function(){
   var ctx = document.getElementById('refrigeration').getContext('2d');
-  ctx.font = '48pt Bank Gothic';
+  ctx.font = '48pt Orbitron';
   ctx.fillStyle = '#099';
   ctx.textAlign = 'center';
   ctx.fillText('32.5\u2109', 200, 100);
@@ -33,7 +33,7 @@ function getFreezerLine(id, data) {
       .set('gutter.top', 200)
       .set('spline', true)
       .set('text.color', '#099')
-      .set('text.font', 'Bank Gothic')
+      .set('text.font', 'Orbitron')
       .set('title', 'Freezer')
       .set('title.color', '#099')
       .set('title.xaxis', 'Last 12h')
@@ -68,7 +68,7 @@ function getReeferLine(id, data) {
       .set('gutter.top', 200)
       .set('spline', true)
       .set('text.color', '#099')
-      .set('text.font', 'Bank Gothic')
+      .set('text.font', 'Orbitron')
       .set('title', 'Refrigerator')
       .set('title.color', '#099')
       .set('title.xaxis', 'Last 12h')
