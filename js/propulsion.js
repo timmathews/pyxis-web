@@ -1,3 +1,5 @@
+---
+---
 $(document).ready(function(){
 
   var theme = {
@@ -160,7 +162,7 @@ $(document).ready(function(){
     renderTo : 'gauge-8'
   });
 
-  var connControl = new WebSocket("ws://pyxis.openseasproject.org/ws/v1/control");
+  var connControl = new WebSocket("{{site.control_url}}");
 
   var config = {
     "version": "1.0",
@@ -182,7 +184,12 @@ $(document).ready(function(){
     connControl.send(config);
   };
 
-  var connData = new WebSocket("ws://pyxis.openseasproject.org/ws/v1/data");
+  var connData = new WebSocket("{{site.data_url}}");
+
+  connData.onclose = function(e) {
+    $('#gauges').html("<h1>Error Connecting</h1><p>" + e.data + "</p>");
+    console.log(e);
+  }
 
   connData.onmessage = function(e) {
     var data = $.parseJSON(e.data);

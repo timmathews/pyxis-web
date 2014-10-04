@@ -134,9 +134,19 @@ function WindGauge(config) {
       ctx.fillText(measure[i], x + w - padding, y + start + ((i + 1) * subSize));
     }
 
+    if(units == '\u00B0') {
+      subSize = 48;
+      ctx.font = 'normal ' + subSize + 'px ' + config.font.subtext;
+    }
+
     ctx.textAlign = 'right';
     var w1 = ctx.measureText(units).width;
     ctx.fillText(units, x + w - 2 * padding, y + padding + subSize);
+
+    if(units == '\u00B0') {
+      subSize = 24;
+      ctx.font = 'normal ' + subSize + 'px ' + config.font.subtext;
+    }
 
     if(tgt != undefined) {
       var w2 = ctx.measureText(tgt).width;
